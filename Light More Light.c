@@ -16,6 +16,5 @@ int main(){
         if(n==x*x) printf("yes\n");
         else printf("no\n");
     }
-    
     return 0;
 }
