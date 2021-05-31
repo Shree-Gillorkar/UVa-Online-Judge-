@@ -68,5 +68,6 @@ int main() {
 		}*/
 		printf("%d %d %d\n", x, y, d);
 	}
+	
 	return 0;
 }
