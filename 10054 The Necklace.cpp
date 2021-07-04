@@ -1,4 +1,24 @@
-#include <algorithm>
+/* Algorithm:
+Title meaning:
+●There is a pile of beads from a necklace. The beads may appear repeatedly. Ask us if  we can connect them to form a necklace. The two beads in each section of the necklace must be satisfied. The first bead must be the same as the first one in the previous section. The two beads are the same, and the second bead in the last section must be
+
+the same as the first in the first section. (That can form a ring)
+
+●Ask whether it can be achieved, if one of the paths can be output
+
+●Euler circuit:
+If the in-degrees of the vertices in the connected graph are all even numbers, the Euler circuit exists
+
+●The idea of seeking Euler circuit:
+cyclically find the starting point. Start from a certain node, and then find a loop path from this point back to this point. This method ensures that every edge is traversed. If the edge of a certain point has not been traversed, let this point be the starting point and this edge as the starting edge, and connect it to the current ring. This way until all edges have been traversed. In this way, the entire graph is connected together.
+Specific steps:
+1.If there is no point connected to this point at this time, then add it to the path
+2.If the point has connected points, then make a list and traverse these points until there are no connected points.
+3.Process the current point, delete the side that has been passed, and perform the same operation on the adjacent point, and add the deleted point to the path.
+4.This is actually a recursive process.*/
+
+
+\#include <algorithm>
 #include <bitset>
 #include <cctype>
 #include <cmath>
