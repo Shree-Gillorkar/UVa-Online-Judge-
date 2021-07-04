@@ -1,3 +1,14 @@
+/* Algorithm:
+●All there is to the problem is finding the Articulation Point of a given graph.
+
+●The idea is to use DFS (Depth First Search). In DFS, we follow vertices in tree form called DFS tree. In the DFS tree, a vertex u is the parent of another vertex v, if v is discovered by u (obviously v is an adjacent of u in the graph). In a DFS tree, a vertex u is an articulation point if one of the following two conditions is true.
+1)u is the root of the DFS tree and it has at least two children.
+2)u is not root of DFS tree and it has a child v such that no vertex in subtree rooted with v has a back edge to one of the ance
+
+●u is the root node of the DFS tree. Because the subtrees of the DFS tree are not connected, they will belong to the same subtree if they are connected. Therefore, as long as the root of the DFS tree has more than two subtrees, it is the articulation point
+
+●u is the non-root node of the DFS tree. The ancestor of point u has a back edge with each descendant, and this point is not an articulation point. If one descendant does not have a back edge, the point is an articulation point*/
+
 #include <cstdio>
 #include <cmath>
 #include <iostream>
