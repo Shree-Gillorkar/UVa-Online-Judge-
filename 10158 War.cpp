@@ -1,4 +1,24 @@
- #include <stdio.h>
+/* Algorithm:
+
+●There are n people who are friends or hostile to each other.
+●There are 4 operations:
+1set a, b set a for a friend,
+2set a for a friend, b for a hostile 3 ask if a, b is a friend
+4 ask if a, b is hostile.
+For query operation, output 1 if it is, otherwise output 0.
+For the setting operation, if it contradicts the known relationship, -1 is output, and the operation is invalid; the valid setting is not output.
+
+●There are inter-relationships and collections. If the relationship between two people is known, whether they are friends or hostility, put them in a set.
+
+●Use an array to represent the relationship between the element and the parent element. Both search and merge involve changes in relational arrays. When writing, you must be clear-headed and understand how it works.
+
+●Then in the Find() process, that is, the process of finding the root node, the relationship between the current node and the parent node is judged through path compression.
+
+●The formula is offset[x]=(offset[x]+offset[father[x]])%2
+The offset between the x node and the new parent node is equal to the offset between the previous x and the parent node plus the parent The sum of the offset between the node and the grandfather node, the purpose of modulo 2 is because there are only two states, that is, friend and enemy. If you do not use modulo operation, you have to use if to judge, which is more troublesome.*/
+
+
+#include <stdio.h>
  #include <set>
  #include <vector>
 
