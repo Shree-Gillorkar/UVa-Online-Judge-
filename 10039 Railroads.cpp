@@ -1,3 +1,10 @@
+/* Algorithm:
+Topic overview :
+●Someone wants to take a train from city A to city B. The question will give the person the departure time and the timetable of the train. The times table shows the time of each
+
+train at each station.According to the person's departure time and train schedule, plan the route for him to arrive at the destination city B at the earliest.
+*/
+
 #include <iostream>
 #include <algorithm>
 #include <iomanip>
