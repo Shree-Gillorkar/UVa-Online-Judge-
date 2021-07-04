@@ -18,7 +18,7 @@ Specific steps:
 4.This is actually a recursive process.*/
 
 
-\#include <algorithm>
+#include <algorithm>
 #include <bitset>
 #include <cctype>
 #include <cmath>
