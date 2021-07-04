@@ -1,3 +1,9 @@
+/* Algorithm:
+●The meaning of the title: Given the coordinates of n points, it is required to find the shortest path to link these points
+●Prime + minimum spanning tree
+●Given the coordinates of n points, it is required to find the shortest path. Obviously, the problem of minimum spanning tree can be achieved by using Prime. To find out the length of each side first.
+●Extra note: Note that the minimum spanning tree of a set of points in the plane can be found in O(n logn ) by a more complex algorithm. The Delaunay Triangulation of a set of points in the plane can be calculated in O(n logn ) , with O(n) edges in the resultant graph. Since the minimum spanning tree is a subset of the Delaunay triangulation, we can apply any of the MST algorithms on the resultant Delaunay triangulation and thus achieve the O(n logn ) bound.*/
+
 import java.io.*;
 import java.util.*;
 import java.lang.*;
