@@ -1,3 +1,13 @@
+/* Algorithm:
+●Analysis: Graph theory, the shortest path. This problem can be solved efficiently by using spfa algorithm.
+●The shortest path faster algorithm is based on Bellman-Ford algorithm where every vertex is used to relax its adjacent vertices but in SPF algorithm, a queue of vertices is maintained and a vertex is added to the queue only if that vertex is relaxed. This process repeats until no more vertex can be relaxed.
+●First, use the existing fire station to calculate the multi-source shortest path and store it in the set dist
+●Then, enumerate all the vertices, calculate the shortest path of the unit, and store it in the set newd to get a new multivariate shortest path set S;
+
+●His element is the minimum value of the corresponding newd and dist elements, that is, S = {min(dist(i), newd(i))}
+●(If a new fire station can update the shortest path of the previous fire station, then this set of solutions must be in the shortest path of the unit at this point)
+●Finally, calculate the farthest distance in each case and go to the minimum.*/
+
 #include <string.h>
 #include <cstdio>
 #include <climits>
