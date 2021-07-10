@@ -1,3 +1,15 @@
+/*
+Algorithm - 
+Add the number attribute i to the elephant to avoid losing after sorting
+Reverse the array of elephants (W is big in front; if W is the same, S is small in front)
+Reverse the longest subsequence of dp for a good array of sort, record the precursor
+Output path (because it is reversed dp, so the output path does not need to stack, continue to output the precursor)
+
+Time Complexity - O(n^2)
+
+
+*/
+
 #include <cstdio>
 #include <algorithm>
 
